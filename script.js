@@ -389,22 +389,22 @@ console.log("Дата рождения: " + dateOfBirth);*/
 
 /**Function - practice*/
 //importing outside function
-const convertNumToString = require("./utils/convertNumToString");
-const convertStrToNum = require("./utils/convertStrToNum");
-const convertNumOrStr = require("./utils/convertNumOrStr");
-
-// console.log(typeof convertNumToString(98));
-// console.log(typeof convertNumToString(54));
-
-console.log(convertNumOrStr("97"));
-console.log(convertNumOrStr(97));
+// const convertNumToString = require("./utils/convertNumToString");
+// const convertStrToNum = require("./utils/convertStrToNum");
+// const convertNumOrStr = require("./utils/convertNumOrStr");
+//
+// // console.log(typeof convertNumToString(98));
+// // console.log(typeof convertNumToString(54));
+//
+// console.log(convertNumOrStr("97"));
+// console.log(convertNumOrStr(97));
 
 //ЗАДАЧА 1
 /*Написать функцию, котрая возвращает строку - 
 случайный цвет в формате rgb. Это будет строка вида "rgb(10,55,250)"
 
-Здесь у вас будет две функции: одна ваша - getRandomRGB, 
-а вторая - функция получения случайного числа в диапазоне min - max. 
+Здесь у вас будет две функции: одна ваша - getRandomRGB,
+а вторая - функция получения случайного числа в диапазоне min - max.
 
 Вот эта функция (просто скопируйте, она уже готова):
 function getRandomInteger(min, max) {
@@ -415,13 +415,135 @@ function getRandomInteger(min, max) {
 Каждый цвет - 3 числа, каждое число лежит в диапазоне от 0 до 255. 
 Одна функция может вызывать другую функцию*/
 
-const randomNum1 = getRandomInteger(0, 100); //0 100 55 87
-const randomNum2 = getRandomInteger(0, 100);
-const randomNum3 = getRandomInteger(0, 100);
+// const randomNum1 = getRandomInteger(0, 100); //0 100 55 87
+// const randomNum2 = getRandomInteger(0, 100);
+// const randomNum3 = getRandomInteger(0, 100);
+//
+// getRandomRGB(randomNum1, randomNum2, randomNum3) //=> rgb(13, 15, 53)
+//
+// `Number: ${randomNum1}`
+// `Name: ${name}`
+//
+// `rgb(${}, ${}, ${})`
 
-getRandomRGB(randomNum1, randomNum2, randomNum3) //=> rgb(13, 15, 53)
+/** OBJECTS*/
+// let username = "demidog"
+// let firstName = "Olzhas"
+// let lastName = "Otep"
+// let email = "olzhas@gmail.com"
+// let password = "123456"
+//
+// let username2 = "sashadeadinside007"
+// let firstName2 = "Sasha"
+// let lastName2 = "Sanya"
+// let email2 = "alexandr@gmail.com"
+// let password2 = "1223556"
 
-`Number: ${randomNum1}`
-`Name: ${name}`
+// const user = {
+//     username: "demidog",
+//     firstname: "Olzhas",
+//     lastName: "Otep",
+//     email: "olzhas@gmail.com",
+//     password: "123456",
+// }
 
-`rgb(${}, ${}, ${})`
+// `
+// const user = {
+//     username: "demidog",
+//     firstname: "Olzhas",
+//     lastName: "Otep",
+//     email: "olzhas@gmail.com",
+//     password: "123456",
+// }
+// `
+
+// const user2 = {
+//     username: "sashadeadinside007",
+//     firstname: "Sasha",
+//     lastName: "Sanya",
+//     email: "alexandr@gmail.com",
+//     password: "1223556",
+// }
+
+// const cloneUser = JSON.parse(JSON.stringify(user))
+// // console.log(JSON.parse(JSON.stringify(5)))
+//
+// console.log(user)
+// user.email = "dgsdgsdgdsgs"
+// console.log(cloneUser)
+// cloneUser.username="Madina"
+
+
+/** OBJECT LOOPS*/
+const user = {
+    username: "demidog",
+    "firstname": "Olzhas",
+    "lastName": "Otep",
+    "email": "olzhas@gmail.com",
+    "password": "123456",
+    "phoneNumber": "543764574",
+    current_address: "Astana"
+}
+
+// console.log(user.username)
+// console.log(user.firstname)
+// console.log(user.lastName)
+// console.log(user.email)
+// console.log(user.password)
+
+/* поля обьекта - object field*/
+/* ключи обьекта - object keys*/
+/* значения обьекта - object values*/
+
+// for (let userField in user) {
+//     console.log(userField + " - " + user[userField])
+//     console.log(`${userField} - ${user[userField]}`)
+// }
+
+// console.log(user["username"])
+// console.log(user.username)
+// console.log(user["current address"])
+// console.log(user.current_address)
+
+// const string = new String("Sasha")
+// console.log(string.toString())
+// console.log(string)
+
+// const num = new Number(6)
+// console.log(num)
+
+// Есть объект с именами и заработными платами инженеров:
+//     const engineers = {
+//         Den: 1000,
+//         Matt: 5000,
+//         Steve: 2000
+//     }
+// Вывести в консоль через шаблонные строки заработную плату всех
+// работников в таком формате:
+//     Заработная плата Den составляет 1000 долларов.
+
+// for (let userField in user) {
+//     console.log(userField + " - " + user[userField])
+//     console.log(`${userField} - ${user[userField]}`)
+// }
+
+const itEmployer1 = {
+    firstname: "Olzhas",
+    lastName: "Otep",
+    age: 19,
+    position: "Front end developer",
+    level: "Junior"
+}
+
+const itEmployer2 = {
+    firstname: "Madina",
+    lastName: "Goroh",
+    age: 28,
+    position: "Front end developer",
+    level: "Middle"
+}
+``
+//Создать фукнцию которая повышает уровень работника на 1 больше
+//jun - middle, middle - senior, senior - teamlead, teamlead - software engineer
+
+
